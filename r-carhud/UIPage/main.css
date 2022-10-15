@@ -1,0 +1,111 @@
+body
+{
+    /* background-image: url(https://cdn.discordapp.com/attachments/1008829374415507516/1030538527538172015/unknown.png); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'Digital';
+    src: url('/UIPage/digital.ttf');
+}
+*
+{
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, 
+    rgb(0, 0, 0) 0.540302px 0.841471px 0px, 
+    rgb(0, 0, 0) -0.416147px 0.909297px 0px, 
+    rgb(0, 0, 0) -0.989992px 0.14112px 0px, 
+    rgb(0, 0, 0) -0.653644px -0.756802px 0px, 
+    rgb(0, 0, 0) 0.283662px -0.958924px 0px, 
+    rgb(0, 0, 0) 0.96017px -0.279415px 0px;
+}
+
+.main
+{
+    position: absolute;
+    width: 9vw;
+    height: 4.5vw;
+    transform: translate(44.6vw, 50vw);  
+    border-radius: .3vw;
+    /* display: none; */
+}
+
+.num
+{
+    font-family: 'Digital';
+    font-weight: 500;
+    text-align: center;
+    transform: translate(3.3vw, 2.6vw);
+    font-size: 2vw;
+    color: rgba(236, 232, 232, 0.911);
+    width: 3vw;
+    border: 1px solid rgba(255, 255, 255, 0.339);
+    border-radius: .3vw;
+}
+
+.icons
+{
+    display: flex;
+    color: rgba(255, 255, 255, 0.856);
+    transform: translate(0, 1.7vw);
+}
+
+#fuel 
+{
+    transform: translate(-1.5vw);
+    display: flex;
+}
+
+#engine 
+{
+    display: flex;
+    transform: translate(-1vw);
+}
+
+#fueltext
+{
+    color: rgba(236, 232, 232, 0.911);
+    transform: translate(-.6vw, .1vw);
+    font-size: 1vw;
+    padding: .2vw;
+    border-radius: .3vw;
+}
+
+#enginetext
+{
+    color: rgba(236, 232, 232, 0.911);
+    transform: translate(.5vw, .1vw);
+    font-size: 1vw; 
+    padding: .2vw;
+    border-radius: .3vw;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#street
+{
+    position: absolute;
+    transform: translate(1vw, 1vw);
+    width: 8vw;
+    text-align: center;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
