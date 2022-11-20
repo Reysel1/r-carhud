@@ -3,7 +3,7 @@ Citizen.CreateThread(function()
    while true do 
        Wait(100)
        sleep = true 
-       local p = GetPlayerPed(-1);
+       local p = PlayerPedId();
        local pc = GetEntityCoords(p)
        local v = GetVehiclePedIsIn(p, false);
        local speed = GetEntitySpeed(v)*3.6;
